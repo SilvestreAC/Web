@@ -1,0 +1,84 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* Fondo de la página con animación */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(100deg, #709eff, #74ebd5);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+  color: #333;
+  overflow: hidden; /* Evita el scroll */
+}
+
+/* Contenedor principal */
+.container {
+  background-color: rgba(255, 255, 255, 0.699);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-height: 500px;
+  height: 50%;
+  max-width: 500px;
+  width: 40%;
+  position: relative;
+  z-index: 1; /* Asegura que el contenedor esté encima de las IPs */
+}
+
+/* Estilo del título */
+.container h1 {
+  font-family:"Ubuntu", sans-serif ;
+  font-size: 2.0em;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+/* Contenedor de botones */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Botones */
+.button-container button {
+  font-family: "Ubuntu", sans-serif ;
+  background-color: #62d866e3;
+  color: white;
+  font-size: 1.2em;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+  background-color: #6ac2ebc2;
+}
+
+.button-container button:active {
+  transform: scale(0.98);
+}
+
+/* Animación del gradiente */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

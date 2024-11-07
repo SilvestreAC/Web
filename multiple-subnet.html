@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles-multiple.css">
+  <link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Gabarito&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Puritan:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Gabarito&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Puritan:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+  <h1>Calculadora de Subredes</h1>
+
+  <!-- Input para la dirección IP -->
+  <label for="ipAddress">Dirección de la red:</label>
+  <input type="text" id="ipAddress" placeholder="Ejemplo: 192.168.1.0">
+
+  <!-- Input para el número de subredes -->
+  <label for="numberOfSubnets">Número de subredes:</label>
+  <input type="number" id="numberOfSubnets" min="1" placeholder="Cantidad de subredes" onchange="generateHostFields()">
+
+  <!-- Campos generados dinámicamente para hosts -->
+  <div id="hostFields"></div>
+
+  <!-- Botón para realizar el cálculo -->
+  <button onclick="calculateMultipleSubnets()">Calcular</button>
+  <button id="printButton" onclick="printResults()" style="display: none;">Imprimir Resultados</button> <!-- Botón para imprimir -->
+
+  <!-- Resultado -->
+  <div id="result"></div>
+</div>
+
+<!-- Scripts necesarios -->
+<script src="js/maskCalculator.js"></script> <!-- Script de cálculo de máscara -->
+<script src="js/multipleSubnets.js"></script> <!-- Script principal de cálculo de múltiples subredes -->
+<script src="js/printResults.js"></script> <!-- Script para imprimir resultados -->
+</body>
+</html>

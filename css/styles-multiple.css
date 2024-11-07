@@ -1,0 +1,91 @@
+/* Similar al de un solo subneteo, pero ajustado */
+
+body {
+  padding: 25px;
+  font-family: "Ubuntu", sans-serif ;
+  background: linear-gradient(100deg, #709eff, #74ebd5);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* Fondo animado */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.699);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 500px;
+  width: 50vh;
+  max-height: 500px; /* Limita la altura máxima */
+  height: auto;
+  overflow-y: scroll; /* Habilita el scroll vertical */
+  scrollbar-width: none; /* Oculta el scrollbar en Firefox */
+}
+
+.container::-webkit-scrollbar {
+  display: none; /* Oculta el scrollbar en Chrome, Safari y Edge */
+}
+
+h1 {
+  
+  font-family: "Ubuntu", sans-serif ;
+  font-size: 2.2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+label {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.2em;
+  display: block;
+  margin: 10px 0 5px;
+}
+
+input {
+  font-family: "Inter", sans-serif;
+  padding: 8px;
+  margin-bottom: 20px;
+  width: 80%;
+  font-size: 1.1em;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family:  "Inter", sans-serif;
+  font-size: 1.1em;
+}
+
+button:hover {
+  background-color: #269cd3c2;
+}
+
+#result {
+  font-family: "Ubuntu", sans-serif ;
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #333;
+}

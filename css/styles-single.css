@@ -1,0 +1,85 @@
+/* Similar al index, pero con estilos específicos si es necesario */
+
+body {
+  padding-top: 10px;
+  padding-bottom: 20vh;
+  font-family: "Ubuntu", sans-serif;
+  background: linear-gradient(100deg, #709eff, #74ebd5);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0px;
+  overflow: hidden;
+}
+
+/* Fondo animado */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.699);
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 500px;
+  width: 50%;
+  max-height: 500vh;
+  height: auto;
+}
+
+h1 {
+  font-family: "Ubuntu", sans-serif ;
+  font-size: 2.0em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+label {
+  font-family: "Ubuntu", sans-serif;
+  display: block;
+  margin: 10px 0 5px;
+  font-size: 1.1em;
+}
+
+input {
+  font-family: "Inter", sans-serif;
+  padding: 8px;
+  margin-bottom: 20px;
+  width: 80%;
+  font-size: 1.1em;
+}
+
+button {
+  font-family: "Inter", sans-serif;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1.1em;
+}
+
+button:hover {
+  background-color: #269cd3c2;
+}
+
+#result {
+  font-family: "Ubuntu", sans-serif;
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #333;
+}
